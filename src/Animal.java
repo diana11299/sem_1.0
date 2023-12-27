@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.List;
 
-import javax.xml.transform.TransformerFactoryConfigurationError;
+// import javax.xml.transform.TransformerFactoryConfigurationError;
 
 public class Animal {
     protected String name;
@@ -9,6 +9,7 @@ public class Animal {
     protected List <String> vaccinations;
     protected String illness;
     protected String owner;
+    protected String type;
 
     public Animal(String name,LocalDate birthDate,List <String> vaccinations,String illness,String owner){
         this.name = name;
@@ -16,6 +17,7 @@ public class Animal {
         this.vaccinations = vaccinations;
         this.illness = illness;
         this.owner = owner;
+        this.type = getClass().getSimpleName();
 
     }
     public String getName(){
@@ -42,9 +44,9 @@ public class Animal {
         System.out.println("Animal is wakeup");
     }
 
-    private void wakeup(int time){
-        System.out.println("Animal is wakeup in " + time);//перегрузка
-    }
+    // private void wakeup(int time){
+    //     System.out.println("Animal is wakeup in " + time);//перегрузка
+    // }
 
     private void eat(){
         System.out.println("Animal ate");
@@ -65,23 +67,23 @@ public class Animal {
         sleep();
     }
 
-    protected void toGo(){
-        System.out.println("Animal moves");
-    }
+    // protected void toGo(){
+    //     System.out.println("Animal moves");
+    // }
 
-    protected void fly(){
-        System.out.println("Animal flies");
-    }
+    // protected void fly(){
+    //     System.out.println("Animal flies");
+    // }
 
-    protected void swim () {
-        System.out.println("Animal swiming");
-    }
+    // protected void swim () {
+    //     System.out.println("Animal swiming");
+    // }
 
-    public void lifeSkills () {
-        toGo();
-        fly();
-        swim();
-    }
+    // public void lifeSkills () {
+    //     toGo();
+    //     fly();
+    //     swim();
+    // }
     
 
     @Override

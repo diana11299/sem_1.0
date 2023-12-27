@@ -1,18 +1,18 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public class Snake extends Animal {
+public class Snake extends Animal implements Swimble {
+
+    
 
     public Snake(String name, LocalDate birthDate, List<String> vaccinations, String illness, String owner) {
         super(name, birthDate, vaccinations, illness, owner);
     }
+
     @Override
-    protected void fly(){
-        System.out.println("NO FLAY!!!");
+    public double swim() {
+        
+        System.out.printf("%s swiming", type);
+        return 10.0;
     }
-    @Override
-    protected void toGo(){
-        System.out.println("DOES NOT GO!!!");
-    }
-    
 }

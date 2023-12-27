@@ -1,17 +1,25 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public class Eagle extends Animal {
+public class Eagle extends Animal implements Flyble, Goable{
+
+    
 
     public Eagle(String name, LocalDate birthDate, List<String> vaccinations, String illness, String owner) {
         super(name, birthDate, vaccinations, illness, owner);
     }
+   
+
     @Override
-    protected void swim(){
-        System.out.println("DOESN'T FLOAT!!!");
+    public double run() {
+        System.out.printf("%s going", type);
+        return 2.0;
     }
+
+
     @Override
-    protected void toGo(){
-        System.out.println("NOT RUNNING!!!");
+    public double fly() {
+        System.out.printf("%s flying", type);
+        return 20.0;
     }
 }
