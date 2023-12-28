@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
    
-    private static final String getSimpleName = null;
+    // private static final String getSimpleName = null;
 
     public static void main(String[] args) {
         Cat barsik = new Cat("Barsik", LocalDate.of(1993, 6, 6), new ArrayList<>(), "Chumka", "Boss", 4);
@@ -41,6 +41,7 @@ public class Main {
 
     
         Nurse nurse1 = new Nurse("Polina", "Nurse", "Barsik", "Junior", LocalDate.of(2023, 12, 11));
+        
         Nurse nurse2 = new Nurse("Yliana", "Nurse", "Pepe, Mia", "-", LocalDate.of(2023, 12, 10));
         Nurse nurse3 = new Nurse("Diana", "Nurse", "Kesha, Donald", "Older", LocalDate.of(2023, 12, 12));
         Doctor doctor1 = new Doctor("Petrov Pavel", "Doctor", "Barsik",  "Veterinar", LocalDate.of(2023, 12, 11));
@@ -56,10 +57,10 @@ public class Main {
         listOfPersonals.add(doctor3);
 
         VeterinaryClinic clinics = new VeterinaryClinic();
-        clinics.addPersonals(listOfPersonals);
+        clinics.addStaff(listOfPersonals);
         clinics.addPatients(animals);
-
-        System.out.println(clinics.getPersonals);
+        System.out.println();
+        System.out.println(clinics.getStaff());
        
     }     
     

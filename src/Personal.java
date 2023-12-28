@@ -25,12 +25,6 @@ public abstract class Personal {
     @Override
     public String toString() {
         return "Personal [name=" + name + ", jobTitle=" + jobTitle + ", patient=" + patient + ", qualification="
-                + qualification + ", dateOfReceipt=" + dateOfReceipt + ", type=" + type + "]";
+                + qualification + ", dateOfReceipt=" + dateOfReceipt + "]";
     }
-
-    
-   
-    
-    
-   
 }

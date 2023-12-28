@@ -6,13 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class VeterinaryClinic {
-    public final char[] getPersonals = null;
+    
     private List<Animal> patients = new ArrayList<>();
     private List<Personal> staff = new ArrayList<>();
-    // public char[] getSwimables;
-    // public Collection personal;
-    public char[] getStaff;
-    private List<Personal> personal;
+
     
 
     public void addPatient(Animal animal){
@@ -28,11 +25,11 @@ public class VeterinaryClinic {
     public void addStaff(Personal personal){
         staff.add(personal);
     }
-    public void addPersonals(Personal ...personals){
-        Collections.addAll(staff, personals);
+    public void addPersonals(Personal ...personal){
+        Collections.addAll(staff, personal);
     }
-    public void addPersonals(List<Personal> personalsList){
-        personal = personalsList;
+    public void addStaff(List<Personal> personalList){
+        staff = personalList;
     }
 
     // public boolean addPersonal(Staff staff){
@@ -93,9 +90,9 @@ public List<Swimble> getSwimables(){
     public List<Animal> getPatients() {
         return patients;
     }
-    public List<Personal> getPersonals() {
+    public List<Personal> getStaff() {
         
-        return personal;
+        return staff;
     }
 
 }
